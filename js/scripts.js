@@ -204,8 +204,8 @@ function draw() {
   emitters.forEach(drawCircle);
 }
 
-/*  function queue() {
-    window.requestAnimationFrame(loop);
-  }
+function queue() {
+  window.requestAnimationFrame(loop);
+}
 
-  loop();
+/*  loop();
