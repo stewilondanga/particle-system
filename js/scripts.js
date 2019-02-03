@@ -128,7 +128,7 @@ function addNewParticles() {
   }
 }
 
-/*function plotParticles(boundsX, boundsY) {
+function plotParticles(boundsX, boundsY) {
   // a new array to hold particles within our bounds
   var currentParticles = [];
 
@@ -148,64 +148,64 @@ function addNewParticles() {
     // Add this particle to the list of current particles
     currentParticles.push(particle);
   }
-
-  // Update our global particles reference
-  particles = currentParticles;
-}
-
-function drawParticles() {
-  ctx.fillStyle = 'rgb(0,0,255)';
-  for (var i = 0; i < particles.length; i++) {
-    var position = particles[i].position;
-    ctx.fillRect(position.x, position.y, particleSize, particleSize);
+  /*
+    // Update our global particles reference
+    particles = currentParticles;
   }
-}
 
-function drawCircle(object) {
-  ctx.fillStyle = object.drawColor;
-  ctx.beginPath();
-  ctx.arc(object.position.x, object.position.y, objectSize, 0, Math.PI * 2);
-  ctx.closePath();
-  ctx.fill();
-}
+  function drawParticles() {
+    ctx.fillStyle = 'rgb(0,0,255)';
+    for (var i = 0; i < particles.length; i++) {
+      var position = particles[i].position;
+      ctx.fillRect(position.x, position.y, particleSize, particleSize);
+    }
+  }
 
-var particles = [];
+  function drawCircle(object) {
+    ctx.fillStyle = object.drawColor;
+    ctx.beginPath();
+    ctx.arc(object.position.x, object.position.y, objectSize, 0, Math.PI * 2);
+    ctx.closePath();
+    ctx.fill();
+  }
 
-var midX = canvas.width / 2;
-var midY = canvas.height / 2;
+  var particles = [];
 
-// Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
-// that emits at a velocity of `2` shooting out from the right (angle `0`)
-var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2))];
+  var midX = canvas.width / 2;
+  var midY = canvas.height / 2;
 
-// Add one field located at `{ x : 400, y : 230}` (to the right of our emitter)
-// that repels with a force of `140`
-var fields = [new Field(new Vector(midX + 150, midY), -140)];
+  // Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
+  // that emits at a velocity of `2` shooting out from the right (angle `0`)
+  var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2))];
 
-function loop() {
-  clear();
-  update();
-  draw();
-  queue();
-}
+  // Add one field located at `{ x : 400, y : 230}` (to the right of our emitter)
+  // that repels with a force of `140`
+  var fields = [new Field(new Vector(midX + 150, midY), -140)];
 
-function clear() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-}
+  function loop() {
+    clear();
+    update();
+    draw();
+    queue();
+  }
 
-function update() {
-  addNewParticles();
-  plotParticles(canvas.width, canvas.height);
-}
+  function clear() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
 
-function draw() {
-  drawParticles();
-  fields.forEach(drawCircle);
-  emitters.forEach(drawCircle);
-}
+  function update() {
+    addNewParticles();
+    plotParticles(canvas.width, canvas.height);
+  }
 
-function queue() {
-  window.requestAnimationFrame(loop);
-}
+  function draw() {
+    drawParticles();
+    fields.forEach(drawCircle);
+    emitters.forEach(drawCircle);
+  }
 
-loop();
+  function queue() {
+    window.requestAnimationFrame(loop);
+  }
+
+  loop();
