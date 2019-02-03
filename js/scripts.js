@@ -18,8 +18,8 @@ var maxParticles = 20000,
 var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
-/*canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+/*canvas.height = window.innerHeight;
 
 function Particle(point, velocity, acceleration) {
   this.position = point || new Vector(0, 0);
