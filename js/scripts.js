@@ -19,9 +19,9 @@ var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-/*canvas.height = window.innerHeight;
+canvas.height = window.innerHeight;
 
-function Particle(point, velocity, acceleration) {
+/*function Particle(point, velocity, acceleration) {
   this.position = point || new Vector(0, 0);
   this.velocity = velocity || new Vector(0, 0);
   this.acceleration = acceleration || new Vector(0, 0);
