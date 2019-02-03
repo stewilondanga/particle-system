@@ -67,12 +67,12 @@ Field.prototype.setMass = function(mass) {
   this.drawColor = mass < 0 ? "#f00" : "#0f0";
 }
 
-/*function Vector(x, y) {
+function Vector(x, y) {
   this.x = x || 0;
   this.y = y || 0;
 }
 
-Vector.prototype.add = function(vector) {
+/*Vector.prototype.add = function(vector) {
   this.x += vector.x;
   this.y += vector.y;
 }
