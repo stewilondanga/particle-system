@@ -72,12 +72,12 @@ function Vector(x, y) {
   this.y = y || 0;
 }
 
-/*Vector.prototype.add = function(vector) {
+Vector.prototype.add = function(vector) {
   this.x += vector.x;
   this.y += vector.y;
 }
 
-Vector.prototype.getMagnitude = function () {
+/*Vector.prototype.getMagnitude = function () {
   return Math.sqrt(this.x * this.x + this.y * this.y);
 };
 
