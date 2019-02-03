@@ -182,14 +182,14 @@ var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2)
 // that repels with a force of `140`
 var fields = [new Field(new Vector(midX + 150, midY), -140)];
 
-/*  function loop() {
-    clear();
-    update();
-    draw();
-    queue();
-  }
+function loop() {
+  clear();
+  update();
+  draw();
+  queue();
+}
 
-  function clear() {
+/*  function clear() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
 
