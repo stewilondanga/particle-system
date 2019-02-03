@@ -18,11 +18,11 @@ body, html {
   height: 1.5em;
 }
 
-/*        canvas {
-            background-color: black;
-        }
+canvas {
+  background-color: black;
+}
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
