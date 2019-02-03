@@ -198,13 +198,13 @@ function update() {
   plotParticles(canvas.width, canvas.height);
 }
 
-/*  function draw() {
-    drawParticles();
-    fields.forEach(drawCircle);
-    emitters.forEach(drawCircle);
-  }
+function draw() {
+  drawParticles();
+  fields.forEach(drawCircle);
+  emitters.forEach(drawCircle);
+}
 
-  function queue() {
+/*  function queue() {
     window.requestAnimationFrame(loop);
   }
 
