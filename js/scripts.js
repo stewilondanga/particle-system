@@ -148,20 +148,20 @@ function plotParticles(boundsX, boundsY) {
     // Add this particle to the list of current particles
     currentParticles.push(particle);
   }
-  /*
-    // Update our global particles reference
-    particles = currentParticles;
-  }
 
-  function drawParticles() {
-    ctx.fillStyle = 'rgb(0,0,255)';
-    for (var i = 0; i < particles.length; i++) {
-      var position = particles[i].position;
-      ctx.fillRect(position.x, position.y, particleSize, particleSize);
-    }
-  }
+  // Update our global particles reference
+  particles = currentParticles;
+}
 
-  function drawCircle(object) {
+function drawParticles() {
+  ctx.fillStyle = 'rgb(0,0,255)';
+  for (var i = 0; i < particles.length; i++) {
+    var position = particles[i].position;
+    ctx.fillRect(position.x, position.y, particleSize, particleSize);
+  }
+}
+
+/*  function drawCircle(object) {
     ctx.fillStyle = object.drawColor;
     ctx.beginPath();
     ctx.arc(object.position.x, object.position.y, objectSize, 0, Math.PI * 2);
