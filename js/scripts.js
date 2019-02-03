@@ -89,14 +89,14 @@ Vector.fromAngle = function(angle, magnitude) {
   return new Vector(magnitude * Math.cos(angle), magnitude * Math.sin(angle));
 };
 
-/*function Emitter(point, velocity, spread) {
+function Emitter(point, velocity, spread) {
   this.position = point; // Vector
   this.velocity = velocity; // Vector
   this.spread = spread || Math.PI / 32; // possible angles = velocity +/- spread
   this.drawColor = "#999"; // So we can tell them apart from Fields later
 }
 
-Emitter.prototype.emitParticle = function() {
+/*Emitter.prototype.emitParticle = function() {
   // Use an angle randomized over the spread so we have more of a "spray"
   var angle = this.velocity.getAngle() + this.spread - (Math.random() * this.spread * 2);
 
