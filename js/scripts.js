@@ -62,12 +62,12 @@ function Field(point, mass) {
   this.setMass(mass);
 }
 
-/*Field.prototype.setMass = function(mass) {
+Field.prototype.setMass = function(mass) {
   this.mass = mass || 100;
   this.drawColor = mass < 0 ? "#f00" : "#0f0";
 }
 
-function Vector(x, y) {
+/*function Vector(x, y) {
   this.x = x || 0;
   this.y = y || 0;
 }
