@@ -27,7 +27,7 @@ function Particle(point, velocity, acceleration) {
   this.acceleration = acceleration || new Vector(0, 0);
 }
 
-/*Particle.prototype.submitToFields = function (fields) {
+Particle.prototype.submitToFields = function(fields) {
   // our starting acceleration this frame
   var totalAccelerationX = 0;
   var totalAccelerationY = 0;
@@ -41,7 +41,7 @@ function Particle(point, velocity, acceleration) {
     var vectorY = field.position.y - this.position.y;
 
     // calculate the force via MAGIC and HIGH SCHOOL SCIENCE!
-    var force = field.mass / Math.pow(vectorX*vectorX+vectorY*vectorY,1.5);
+    var force = field.mass / Math.pow(vectorX * vectorX + vectorY * vectorY, 1.5);
 
     // add to the total acceleration the force adjusted by distance
     totalAccelerationX += vectorX * force;
@@ -52,7 +52,7 @@ function Particle(point, velocity, acceleration) {
   this.acceleration = new Vector(totalAccelerationX, totalAccelerationY);
 };
 
-Particle.prototype.move = function () {
+/*Particle.prototype.move = function () {
   this.velocity.add(this.acceleration);
   this.position.add(this.velocity);
 };
