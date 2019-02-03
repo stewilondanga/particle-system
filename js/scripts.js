@@ -208,4 +208,4 @@ function queue() {
   window.requestAnimationFrame(loop);
 }
 
-/*  loop();
+loop();
