@@ -113,7 +113,7 @@ Emitter.prototype.emitParticle = function() {
   return new Particle(position, velocity);
 };
 
-/*function addNewParticles() {
+function addNewParticles() {
   // if we're at our max, stop emitting.
   if (particles.length > maxParticles) return;
 
@@ -128,7 +128,7 @@ Emitter.prototype.emitParticle = function() {
   }
 }
 
-function plotParticles(boundsX, boundsY) {
+/*function plotParticles(boundsX, boundsY) {
   // a new array to hold particles within our bounds
   var currentParticles = [];
 
