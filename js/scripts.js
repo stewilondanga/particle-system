@@ -189,11 +189,11 @@ function loop() {
   queue();
 }
 
-/*  function clear() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-  }
+function clear() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
 
-  function update() {
+/*  function update() {
     addNewParticles();
     plotParticles(canvas.width, canvas.height);
   }
