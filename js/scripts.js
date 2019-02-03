@@ -161,15 +161,15 @@ function drawParticles() {
   }
 }
 
-/*  function drawCircle(object) {
-    ctx.fillStyle = object.drawColor;
-    ctx.beginPath();
-    ctx.arc(object.position.x, object.position.y, objectSize, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-  }
+function drawCircle(object) {
+  ctx.fillStyle = object.drawColor;
+  ctx.beginPath();
+  ctx.arc(object.position.x, object.position.y, objectSize, 0, Math.PI * 2);
+  ctx.closePath();
+  ctx.fill();
+}
 
-  var particles = [];
+/*  var particles = [];
 
   var midX = canvas.width / 2;
   var midY = canvas.height / 2;
