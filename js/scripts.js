@@ -7,9 +7,9 @@ var navigate = (function() {
   });
 })();
 
-/*"use strict";
+"use strict";
 
-var maxParticles = 20000,
+/*var maxParticles = 20000,
   particleSize = 1,
   emissionRate = 20,
   objectSize = 3; // drawSize of emitter/field
