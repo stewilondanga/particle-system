@@ -21,13 +21,13 @@ var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-/*function Particle(point, velocity, acceleration) {
+function Particle(point, velocity, acceleration) {
   this.position = point || new Vector(0, 0);
   this.velocity = velocity || new Vector(0, 0);
   this.acceleration = acceleration || new Vector(0, 0);
 }
 
-Particle.prototype.submitToFields = function (fields) {
+/*Particle.prototype.submitToFields = function (fields) {
   // our starting acceleration this frame
   var totalAccelerationX = 0;
   var totalAccelerationY = 0;
