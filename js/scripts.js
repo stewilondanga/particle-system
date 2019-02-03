@@ -52,12 +52,12 @@ Particle.prototype.submitToFields = function(fields) {
   this.acceleration = new Vector(totalAccelerationX, totalAccelerationY);
 };
 
-/*Particle.prototype.move = function () {
+Particle.prototype.move = function() {
   this.velocity.add(this.acceleration);
   this.position.add(this.velocity);
 };
 
-function Field(point, mass) {
+/*function Field(point, mass) {
   this.position = point;
   this.setMass(mass);
 }
