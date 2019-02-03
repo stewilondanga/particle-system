@@ -180,9 +180,9 @@ var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2)
 
 // Add one field located at `{ x : 400, y : 230}` (to the right of our emitter)
 // that repels with a force of `140`
-/*  var fields = [new Field(new Vector(midX + 150, midY), -140)];
+var fields = [new Field(new Vector(midX + 150, midY), -140)];
 
-  function loop() {
+/*  function loop() {
     clear();
     update();
     draw();
