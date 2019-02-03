@@ -85,11 +85,11 @@ Vector.prototype.getAngle = function() {
   return Math.atan2(this.y, this.x);
 };
 
-/*Vector.fromAngle = function (angle, magnitude) {
+Vector.fromAngle = function(angle, magnitude) {
   return new Vector(magnitude * Math.cos(angle), magnitude * Math.sin(angle));
 };
 
-function Emitter(point, velocity, spread) {
+/*function Emitter(point, velocity, spread) {
   this.position = point; // Vector
   this.velocity = velocity; // Vector
   this.spread = spread || Math.PI / 32; // possible angles = velocity +/- spread
