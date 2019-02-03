@@ -169,9 +169,9 @@ function drawCircle(object) {
   ctx.fill();
 }
 
-/*  var particles = [];
+var particles = [];
 
-  var midX = canvas.width / 2;
+/*  var midX = canvas.width / 2;
   var midY = canvas.height / 2;
 
   // Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
