@@ -96,7 +96,7 @@ function Emitter(point, velocity, spread) {
   this.drawColor = "#999"; // So we can tell them apart from Fields later
 }
 
-/*Emitter.prototype.emitParticle = function() {
+Emitter.prototype.emitParticle = function() {
   // Use an angle randomized over the spread so we have more of a "spray"
   var angle = this.velocity.getAngle() + this.spread - (Math.random() * this.spread * 2);
 
@@ -110,10 +110,10 @@ function Emitter(point, velocity, spread) {
   var velocity = Vector.fromAngle(angle, magnitude);
 
   // return our new Particle!
-  return new Particle(position,velocity);
+  return new Particle(position, velocity);
 };
 
-function addNewParticles() {
+/*function addNewParticles() {
   // if we're at our max, stop emitting.
   if (particles.length > maxParticles) return;
 
