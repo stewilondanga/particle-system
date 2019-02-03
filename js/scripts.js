@@ -171,8 +171,8 @@ function drawCircle(object) {
 
 var particles = [];
 
-/*  var midX = canvas.width / 2;
-  var midY = canvas.height / 2;
+var midX = canvas.width / 2;
+/*  var midY = canvas.height / 2;
 
   // Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
   // that emits at a velocity of `2` shooting out from the right (angle `0`)
