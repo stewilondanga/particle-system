@@ -172,15 +172,15 @@ function drawCircle(object) {
 var particles = [];
 
 var midX = canvas.width / 2;
-/*  var midY = canvas.height / 2;
+var midY = canvas.height / 2;
 
-  // Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
-  // that emits at a velocity of `2` shooting out from the right (angle `0`)
-  var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2))];
+// Add one emitter located at `{ x : 100, y : 230}` from the origin (top left)
+// that emits at a velocity of `2` shooting out from the right (angle `0`)
+/*  var emitters = [new Emitter(new Vector(midX - 150, midY), Vector.fromAngle(0, 2))];
 
   // Add one field located at `{ x : 400, y : 230}` (to the right of our emitter)
   // that repels with a force of `140`
-  var fields = [new Field(new Vector(midX + 150, midY), -140)];
+/*  var fields = [new Field(new Vector(midX + 150, midY), -140)];
 
   function loop() {
     clear();
