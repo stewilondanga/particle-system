@@ -15,8 +15,8 @@ var maxParticles = 20000,
   objectSize = 3; // drawSize of emitter/field
 
 
-/*var canvas = document.querySelector('canvas');
-var ctx = canvas.getContext('2d');
+var canvas = document.querySelector('canvas');
+/*var ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
