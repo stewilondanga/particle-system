@@ -193,12 +193,12 @@ function clear() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-/*  function update() {
-    addNewParticles();
-    plotParticles(canvas.width, canvas.height);
-  }
+function update() {
+  addNewParticles();
+  plotParticles(canvas.width, canvas.height);
+}
 
-  function draw() {
+/*  function draw() {
     drawParticles();
     fields.forEach(drawCircle);
     emitters.forEach(drawCircle);
