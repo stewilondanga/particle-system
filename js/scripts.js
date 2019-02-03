@@ -77,11 +77,11 @@ Vector.prototype.add = function(vector) {
   this.y += vector.y;
 }
 
-/*Vector.prototype.getMagnitude = function () {
+Vector.prototype.getMagnitude = function() {
   return Math.sqrt(this.x * this.x + this.y * this.y);
 };
 
-Vector.prototype.getAngle = function () {
+/*Vector.prototype.getAngle = function () {
   return Math.atan2(this.y,this.x);
 };
 
